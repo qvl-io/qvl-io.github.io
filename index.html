@@ -21,14 +21,111 @@
                 background-color: aliceblue;
             }
 
+            header {
+
+            }
+
+            footer {
+                display: none;
+            }
+
             .logo {
                 margin: 1rem auto;
                 width: 500px;
             }
+
+            .title {
+                display: none;
+            }
+
+            .subtitle {
+
+            }
+
+            .projects {
+                margin: 0 auto;
+                padding-top: 0.5em;
+                max-width: 1050px;
+            }
+
+            @media (min-width: 650px) {
+                .projects {
+                    align-self: center;
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+            }
+
+            .projects > div {
+                box-sizing: border-box;
+                margin: 0.5em 0;
+                padding: 1.2em 1em;
+            }
+
+            @media (min-width: 650px) {
+                .projects > div {
+                    margin: 0.5em 1%;
+                    padding: 1em;
+                    width: 48%;
+                }
+            }
+
+            @media (min-width: 1080px) {
+                .projects > div {
+                    width: 31.33%;
+                }
+            }
+
+            .projects h3 {
+    font-weight: 700;
+    line-height: 1.1;
+    color: #ffad15;
+    display: inline-block;
+    font-size: 2.7rem;
+    max-width: 100%;
+    text-decoration: none;
+    transition: color 0.2s;
+    word-wrap: break-word;
+    text-transform: uppercase;
+            }
+
+            .projects p {
+    color: #1e1e1d;
+    font-size: 1.1em;
+    line-height: 1.4;
+    margin-top: 0.5em;
+            }
+
+
+
         </style>
     </head>
     <body>
-        <img src="./logo.svg" alt="QVL logo" class="logo" />
-        <h1>Quality Versability unLimited</h1>
+        <header>
+            <img src="./logo.svg" alt="QVL logo" class="logo" />
+            <h1 class="title">Quality Versability unLimited</h1>
+            <h2 class="subtitle"></h2>
+        </header>
+        <div class="projects">
+            <div>
+                <h3>Hippo Db</h3>
+                <p>A distributed read-only database.</p>
+            </div>
+            <div>
+                <h3>hbase rdd</h3>
+                <p>Spark RDD to read, write and delete from HBase</p>
+            </div>
+            <div>
+                <h3>hbase rdd</h3>
+                <p>Spark RDD to read, write and delete from HBase</p>
+            </div>
+            <div>
+                <h3>Lethe</h3>
+                <p>Oblivious RAM for Scala</p>
+            </div>
+        </div>
+        <footer>
+            (c) 2024 The QVL team.
+        </footer>
     </body>
 </html>
