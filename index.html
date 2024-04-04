@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>QVL - Quality Versability unLimited</title>
+        <title>Corpedo - Quality Versability unLimited</title>
 
         <style>
             * {
@@ -17,8 +17,17 @@
                 max-width: 100%;
             }
 
-            html {
+            body {
                 background-color: aliceblue;
+            }
+
+            .content {
+                border-radius: 10px;
+                border: 1px solid burlywood;
+                margin: 1rem auto 2rem;
+                max-width: 950px;
+                min-height: 100vh;
+                background: white;
             }
 
             header {
@@ -46,11 +55,12 @@
                 margin: 0 auto;
                 padding-top: 0.5em;
                 max-width: 1050px;
+                align-self: center;
             }
 
             @media (min-width: 650px) {
                 .projects {
-                    align-self: center;
+                   
                     display: flex;
                     flex-wrap: wrap;
                 }
@@ -86,7 +96,6 @@
     text-decoration: none;
     transition: color 0.2s;
     word-wrap: break-word;
-    text-transform: uppercase;
             }
 
             .projects p {
@@ -101,31 +110,38 @@
         </style>
     </head>
     <body>
-        <header>
-            <img src="./logo.svg" alt="QVL logo" class="logo" />
-            <h1 class="title">Quality Versability unLimited</h1>
-            <h2 class="subtitle"></h2>
-        </header>
-        <div class="projects">
-            <div>
-                <h3>Hippo Db</h3>
-                <p>A distributed read-only database.</p>
+        <div class="content">
+            <header>
+                <img src="./corpedo.svg" alt="Corpedo logo" class="logo" />
+                <h1 class="title">Quality Versability unLimited</h1>
+                <h2 class="subtitle"></h2>
+            </header>
+            <div class="projects">
+                <div>
+                    <h3>Hippo Db</h3>
+                    <p>A distributed read-only database.</p>
+                </div>
+                <div>
+                    <h3>hbase rdd</h3>
+                    <p>Spark RDD to read, write and delete from HBase</p>
+                </div>
+                <div>
+                    <h3>Lethe</h3>
+                    <p>Oblivious RAM for Scala</p>
+                </div>
+                <div>
+                    <h3>TODO</h3>
+                </div>
+                <div>
+                    <h3>TODO</h3>
+                </div>
+                <div>
+                    <h3>TODO</h3>
+                </div>
             </div>
-            <div>
-                <h3>hbase rdd</h3>
-                <p>Spark RDD to read, write and delete from HBase</p>
-            </div>
-            <div>
-                <h3>hbase rdd</h3>
-                <p>Spark RDD to read, write and delete from HBase</p>
-            </div>
-            <div>
-                <h3>Lethe</h3>
-                <p>Oblivious RAM for Scala</p>
-            </div>
-        </div>
-        <footer>
-            (c) 2024 The QVL team.
-        </footer>
+            <footer>
+                (c) 2024 Corpedo Org.
+            </footer>
+        </div>       
     </body>
 </html>
